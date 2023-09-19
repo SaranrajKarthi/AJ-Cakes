@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="./custom-cake.js"></script>
+    <title>Cake Shop</title>
+
+</head>
+
+<body>
+    <header>
+        <div >
+
+            <img  class="company-logo"
+                src="https://img.freepik.com/premium-vector/cute-bakery-chef-girl-holding-cake-smiling-cartoon-art-illustration-logo_56104-51.jpg"
+                alt="Logo">
+            <h1>Welcome to AJ Cakes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#footer">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div id="cakes" class="cake-heading">
+        <h1>Our Delicious Cakes</h1>
+    </div>
+    <main>
+
+        <div class="cake-card">
+            <img src="../assets/black currant cake1.jpg" alt="Black Currant Cake">
+            <h2>Black Currant Cake</h2>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="../assets/Butterscotch cake.jpg" alt="Butterscotch Cake">
+            <h2>Butterscotch Cake</h2>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="../assets/Chocolate cake1.jpg" alt="Chocolate Cake">
+            <h2>Chocolate Cake</h2>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="../assets/rainbow_cake1.jpg" alt="Rainbow Cake">
+            <h2>Rainbow Cake</h2>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="../assets/Browine cake.jpg" alt="Brownie Cake">
+            <h2>Brownie Cake</h2>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="../assets/Cup cakes.jpg" alt="Cup Cakes">
+            <h2>Cup Cake</h2>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="cake-card">
+            <img src="../assets/Customized-Cake.jpg" alt="Customized Cake">
+            <h2>Customized Cake</h2>
+            <button class="order-button"  id="showPopup">Choose your Cake</button>
+        </div>
+        <div class="popup" id="cakePopup">
+            <div class="popup-content">
+                <button class="close-button" id="closePopup">Close</button>
+                <h3>Select your options:</h3>
+                <button class="option-button" id="flavorButton">Flavors</button>
+                <button class="option-button" id="creamButton">Creams</button>
+                <button class="option-button" id="cakeTypeButton">Cake Types</button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2023 Cake Shop</p>
+    </footer>
+</body>
+
+</html>
