@@ -5,7 +5,7 @@ let cartListElement = document.querySelector(".cartList");
 let body = document.querySelector("body");
 let total = document.querySelector(".total");
 let quantity = document.querySelector(".quantity");
-//edifefjepfjepofjkepofeefef
+
 openShopping.addEventListener("click", () => {
   body.classList.add("active");
 });
@@ -83,16 +83,18 @@ function reloadCart() {
       count += value.quantity;
       let newLi = document.createElement("li");
       newLi.innerHTML = `
+      
       <div><img src="assets/${value.image}"/></div>
       <div>${value.name}</div>
-      <div>${value.price.toLocaleString()}</div>
+      <div>Rs.${value.price.toLocaleString()}</div>
       <div>
           <button onclick="changeQuantity(${key}, ${value.quantity - 1
         })">-</button>
           <div class="count">${value.quantity}</div>
           <button onclick="changeQuantity(${key}, ${value.quantity + 1
         })">+</button>
-      </div>`;
+      </div>
+      `;
       cartListElement.appendChild(newLi);
     }
   }
